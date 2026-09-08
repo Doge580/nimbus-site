@@ -1,4 +1,95 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nimbus Weather</title>
-<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:0 auto;padding:40px 20px;line-height:1.6;color:#1a1d2e;background:#fafbff}a{color:#3f51b5}</style></head>
-<body><h1>Nimbus Weather</h1><p>Weerapp voor Android: actueel weer, uurlijkse en 10-daagse verwachting. Powered by Google WeatherNext 3.</p>
-<p><a href="privacy.html">Privacybeleid / Privacy policy</a></p></body></html>
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nimbus Weather – weer van Google's AI-model, eerlijk over zekerheid</title>
+<meta name="description" content="Nimbus Weather is een weerapp voor Android op Google WeatherNext 3. Bij elke dag zie je hoe zeker de verwachting is. Geen reclame, geen account, geen tracking.">
+<meta property="og:title" content="Nimbus Weather">
+<meta property="og:description" content="Weer van Google's AI-model WeatherNext 3. Eerlijk over zekerheid, zonder reclame.">
+<meta property="og:image" content="https://doge580.github.io/nimbus-site/img/01.png">
+<meta property="og:url" content="https://doge580.github.io/nimbus-site/">
+<link rel="icon" href="img/icon.png">
+<link rel="alternate" hreflang="en" href="https://doge580.github.io/nimbus-site/en.html">
+<style>
+  :root{--bg:#F4F7FC;--surface:#fff;--ink:#12203B;--muted:#56627A;--line:#D8E0EE;--accent:#3F51B5;--sky:#5B7CFF;--tint:#E9EDFB;--high:#1F8F63;--mid:#B57F00;--low:#C4463F}
+  @media (prefers-color-scheme:dark){:root{--bg:#0D1526;--surface:#15203A;--ink:#E8EEF9;--muted:#A6B2C9;--line:#2A3752;--accent:#8DA2FF;--sky:#7EC8FF;--tint:#1B2745;--high:#4CC38A;--mid:#E8B23C;--low:#E5716A}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  a{color:var(--accent)}
+  .wrap{max-width:960px;margin:0 auto;padding:28px 20px 72px}
+  nav{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:.95rem}
+  nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--ink)}
+  nav .brand img{width:32px;height:32px;border-radius:8px}
+  nav .links{display:flex;gap:18px}
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-top:44px}
+  @media (max-width:760px){.hero{grid-template-columns:1fr}}
+  h1{font-size:clamp(2rem,4.6vw,3rem);line-height:1.08;margin:0 0 14px;letter-spacing:-.01em;text-wrap:balance}
+  .lede{font-size:1.15rem;max-width:34em;margin:0 0 22px}
+  .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:10px}
+  .cta:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+  .sub{font-size:.9rem;color:var(--muted);margin-top:10px}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .shots img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);background:var(--surface)}
+  .promises{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:56px}
+  @media (max-width:640px){.promises{grid-template-columns:1fr}}
+  .promise{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .promise h2{font-size:1.1rem;margin:0 0 6px}
+  .promise p{margin:0;color:var(--muted)}
+  .conf{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+  .conf::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+  .high{color:var(--high)}.mid{color:var(--mid)}.low{color:var(--low)}
+  h2.section{font-size:1.5rem;margin:56px 0 10px;text-wrap:balance}
+  .steps{background:var(--tint);border-radius:14px;padding:18px 22px;max-width:640px}
+  .steps ol{margin:8px 0 0;padding-left:22px}
+  .steps li{margin:8px 0}
+  footer{margin-top:64px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:8px 22px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="./"><img src="img/icon.png" alt="" width="32" height="32">Nimbus Weather</a>
+    <div class="links"><a href="zekerheid.html">Waarom zekerheid</a><a href="en.html">English</a></div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>Het weer van Google's AI-model, eerlijk over hoe zeker het is.</h1>
+      <p class="lede">Nimbus Weather laat bij elke dag zien of de verwachting <span class="conf high">hoog</span>, <span class="conf mid">matig</span> of <span class="conf low">laag</span> in zekerheid is. Geen reclame, geen account, geen tracking. Alles op één scherm, met regenradar.</p>
+      <a class="cta" href="https://play.google.com/apps/testing/app.nimbus.weather">Word tester op Android</a>
+      <p class="sub">De app zit in de laatste testfase voor de Play Store. Testen kost niets en je helpt de app beter maken.</p>
+    </div>
+    <div class="shots">
+      <img src="img/01.png" alt="Beginscherm van Nimbus Weather met actueel weer, uurverwachting en dagen vooruit">
+      <img src="img/02.png" alt="Dagoverzicht met per dag de zekerheid van de verwachting">
+      <img src="img/03.png" alt="Neerslagradar op de kaart">
+    </div>
+  </section>
+
+  <section class="promises">
+    <div class="promise"><h2>AI-weermodel van Google</h2><p>De verwachting komt van Google WeatherNext 3, geleverd via het Google Maps Platform Weather API. Powered by Google WeatherNext 3.</p></div>
+    <div class="promise"><h2>Eerlijk over zekerheid</h2><p>Een verwachting voor overmorgen is zekerder dan die voor dag acht. Nimbus zegt dat gewoon, in plaats van overal even stellig te doen. <a href="zekerheid.html">Waarom dat belangrijk is.</a></p></div>
+    <div class="promise"><h2>Geen reclame, geen account, geen tracking</h2><p>Je locatie wordt alleen gebruikt om het weer op te halen en blijft op je telefoon. Lees het <a href="privacy.html">privacybeleid</a>.</p></div>
+    <div class="promise"><h2>Alles op één scherm</h2><p>Nu, komende uren en tien dagen vooruit zonder te zoeken. Plus een neerslagradar voor Europa en de Verenigde Staten.</p></div>
+  </section>
+
+  <h2 class="section">Meedoen met de test</h2>
+  <div class="steps">
+    <p>Twee stappen op je Android-telefoon, met het Google-account dat je Play Store gebruikt:</p>
+    <ol>
+      <li>Word lid van de testgroep: <a href="https://groups.google.com/g/nimbus-weather-testers">groups.google.com/g/nimbus-weather-testers</a></li>
+      <li>Tik op "Word tester": <a href="https://play.google.com/apps/testing/app.nimbus.weather">play.google.com/apps/testing/app.nimbus.weather</a> en installeer de app uit de Play Store.</li>
+    </ol>
+    <p class="sub">Duurt het even voordat de app verschijnt? Dat is normaal, Google heeft soms een uur nodig. Feedback is welkom op <a href="mailto:thenewmediax@gmail.com">thenewmediax@gmail.com</a>.</p>
+  </div>
+
+  <footer>
+    <span>© 2026 Nimbus Weather</span>
+    <a href="privacy.html">Privacybeleid</a>
+    <a href="zekerheid.html">Waarom een weerapp moet zeggen hoe zeker ze is</a>
+    <a href="en.html">English</a>
+  </footer>
+</div>
+</body>
+</html>

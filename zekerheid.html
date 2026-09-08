@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waarom een weerapp moet zeggen hoe zeker ze is – Nimbus Weather</title>
+<meta name="description" content="Een verwachting voor overmorgen is iets anders dan een verwachting voor dag acht. Waarom Nimbus Weather bij elke dag de zekerheid toont, en wat die woorden betekenen.">
+<meta property="og:title" content="Waarom een weerapp moet zeggen hoe zeker ze is">
+<meta property="og:description" content="Dag acht is geen dag twee. Nimbus Weather zegt dat gewoon.">
+<meta property="og:url" content="https://doge580.github.io/nimbus-site/zekerheid.html">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root{--bg:#F4F7FC;--surface:#fff;--ink:#12203B;--muted:#56627A;--line:#D8E0EE;--accent:#3F51B5;--tint:#E9EDFB;--high:#1F8F63;--mid:#B57F00;--low:#C4463F}
+  @media (prefers-color-scheme:dark){:root{--bg:#0D1526;--surface:#15203A;--ink:#E8EEF9;--muted:#A6B2C9;--line:#2A3752;--accent:#8DA2FF;--tint:#1B2745;--high:#4CC38A;--mid:#E8B23C;--low:#E5716A}}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+  a{color:var(--accent)}
+  .wrap{max-width:680px;margin:0 auto;padding:28px 20px 72px}
+  nav{font-size:.95rem;margin-bottom:36px}
+  h1{font-size:clamp(1.8rem,4.2vw,2.5rem);line-height:1.12;margin:0 0 10px;text-wrap:balance}
+  .meta{color:var(--muted);margin-bottom:26px}
+  h2{font-size:1.25rem;margin:34px 0 8px}
+  p{margin:12px 0}
+  .conf{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+  .conf::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+  .high{color:var(--high)}.mid{color:var(--mid)}.low{color:var(--low)}
+  table{border-collapse:collapse;width:100%;margin:14px 0;background:var(--surface);border:1px solid var(--line)}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .box{background:var(--tint);border-radius:12px;padding:14px 18px;margin:22px 0}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="./">← Nimbus Weather</a></nav>
+  <h1>Waarom een weerapp moet zeggen hoe zeker ze is</h1>
+  <p class="meta">Door de maker van Nimbus Weather · september 2026</p>
+
+  <p>Open een willekeurige weerapp en kijk naar dag acht. Er staat een icoontje, een temperatuur en misschien een neerslagkans. Het ziet er precies zo stellig uit als vandaag. Dat is het probleem.</p>
+
+  <p>Een verwachting voor morgen komt uit een berekening die begint bij de metingen van vanochtend. Een verwachting voor dag acht komt uit dezelfde berekening, maar dan acht keer doorgerekend, met elke stap een beetje meer ruimte voor afwijking. Meteorologen weten dit al vijftig jaar. Ze noemen het de horizon: hoe verder weg, hoe minder zeker. Bijna geen enkele app vertelt het.</p>
+
+  <h2>Wat Nimbus laat zien</h2>
+  <p>Bij elke dag in Nimbus Weather staat een van drie woorden:</p>
+  <table>
+    <tr><th>Label</th><th>Wanneer</th><th>Hoe je het leest</th></tr>
+    <tr><td><span class="conf high">Zekerheid: hoog</span></td><td>Vandaag tot en met overmorgen</td><td>Hier kun je afspraken op plannen.</td></tr>
+    <tr><td><span class="conf mid">Zekerheid: matig</span></td><td>Dag drie tot en met vijf</td><td>De grote lijn klopt meestal, de details (tijdstip van regen, exacte graden) kunnen verschuiven.</td></tr>
+    <tr><td><span class="conf low">Zekerheid: laag</span></td><td>Dag zes en verder</td><td>Een indruk van het weertype, geen belofte. Kijk over een paar dagen opnieuw.</td></tr>
+  </table>
+  <p>De labels volgen de horizon van de verwachting. Dat is bewust simpel: het gaat erom dat je in één oogopslag ziet welke dagen je serieus kunt nemen en welke nog kunnen kantelen.</p>
+
+  <h2>Waar het weer vandaan komt</h2>
+  <p>Nimbus gebruikt de verwachtingen van Google WeatherNext 3, een AI-weermodel van Google, geleverd via het officiële Google Maps Platform Weather API. Wij maken het model niet en we doen er geen claims over die Google zelf niet doet. Wat wij toevoegen is eerlijkheid over de horizon, een rustig scherm en de belofte dat je gegevens van jou blijven.</p>
+
+  <div class="box">
+    <p><strong>Wat we niet zeggen.</strong> Je zult in Nimbus nooit "het nauwkeurigste weer" lezen. Geen enkel model wint elke dag. Wel zeggen we bij elke dag hoe zeker we zijn, zodat jij kunt beslissen wat je met de verwachting doet.</p>
+  </div>
+
+  <h2>Waarom dit belangrijk is</h2>
+  <p>Wie op vrijdag een barbecue plant voor volgende week zaterdag, neemt een beslissing op dag acht. Als de app dat met dezelfde stelligheid toont als het weer van morgen, is de teleurstelling voorspelbaar. Als de app zegt "zekerheid laag, kijk dinsdag nog eens", plan je slimmer. Een eerlijke app is uiteindelijk de app die je vertrouwt.</p>
+
+  <p>Wil je meedoen met de test? Op de <a href="./">startpagina</a> staat hoe.</p>
+
+  <footer>Nimbus Weather · Powered by Google WeatherNext 3 · <a href="privacy.html">Privacybeleid</a> · <a href="confidence.html">Read this in English</a></footer>
+</div>
+</body>
+</html>

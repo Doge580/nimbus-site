@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why a weather app should tell you how sure it is – Nimbus Weather</title>
+<meta name="description" content="A forecast for the day after tomorrow is not the same thing as a forecast for day eight. Why Nimbus Weather shows a confidence label on every day, and what the labels mean.">
+<meta property="og:title" content="Why a weather app should tell you how sure it is">
+<meta property="og:description" content="Day eight is not day two. Nimbus Weather just says so.">
+<meta property="og:url" content="https://doge580.github.io/nimbus-site/confidence.html">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root{--bg:#F4F7FC;--surface:#fff;--ink:#12203B;--muted:#56627A;--line:#D8E0EE;--accent:#3F51B5;--tint:#E9EDFB;--high:#1F8F63;--mid:#B57F00;--low:#C4463F}
+  @media (prefers-color-scheme:dark){:root{--bg:#0D1526;--surface:#15203A;--ink:#E8EEF9;--muted:#A6B2C9;--line:#2A3752;--accent:#8DA2FF;--tint:#1B2745;--high:#4CC38A;--mid:#E8B23C;--low:#E5716A}}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+  a{color:var(--accent)}
+  .wrap{max-width:680px;margin:0 auto;padding:28px 20px 72px}
+  nav{font-size:.95rem;margin-bottom:36px}
+  h1{font-size:clamp(1.8rem,4.2vw,2.5rem);line-height:1.12;margin:0 0 10px;text-wrap:balance}
+  .meta{color:var(--muted);margin-bottom:26px}
+  h2{font-size:1.25rem;margin:34px 0 8px}
+  p{margin:12px 0}
+  .conf{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+  .conf::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+  .high{color:var(--high)}.mid{color:var(--mid)}.low{color:var(--low)}
+  table{border-collapse:collapse;width:100%;margin:14px 0;background:var(--surface);border:1px solid var(--line)}
+  th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .box{background:var(--tint);border-radius:12px;padding:14px 18px;margin:22px 0}
+  footer{margin-top:56px;border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav><a href="en.html">← Nimbus Weather</a></nav>
+  <h1>Why a weather app should tell you how sure it is</h1>
+  <p class="meta">By the maker of Nimbus Weather · September 2026</p>
+
+  <p>Open any weather app and look at day eight. There is an icon, a temperature, maybe a chance of rain. It looks exactly as confident as today. That is the problem.</p>
+
+  <p>A forecast for tomorrow comes out of a calculation that starts from this morning's measurements. A forecast for day eight comes out of the same calculation, run eight steps further, with a little more room for error at every step. Meteorologists have known this for fifty years. They call it the horizon: the further out, the less certain. Almost no app tells you.</p>
+
+  <h2>What Nimbus shows</h2>
+  <p>Every day in Nimbus Weather carries one of three labels:</p>
+  <table>
+    <tr><th>Label</th><th>When</th><th>How to read it</th></tr>
+    <tr><td><span class="conf high">Confidence: high</span></td><td>Today through the day after tomorrow</td><td>Safe to plan around.</td></tr>
+    <tr><td><span class="conf mid">Confidence: fair</span></td><td>Days three to five</td><td>The big picture usually holds; details (when the rain starts, exact degrees) can shift.</td></tr>
+    <tr><td><span class="conf low">Confidence: low</span></td><td>Day six and beyond</td><td>An impression of the weather type, not a promise. Check again in a few days.</td></tr>
+  </table>
+  <p>The labels follow the forecast horizon. That is deliberately simple: the point is that you see at a glance which days to take seriously and which can still turn.</p>
+
+  <h2>Where the weather comes from</h2>
+  <p>Nimbus uses forecasts from Google WeatherNext 3, an AI weather model by Google, delivered through the official Google Maps Platform Weather API. We do not make the model, and we make no claims about it that Google does not make itself. What we add is honesty about the horizon, a calm screen, and the promise that your data stays yours.</p>
+
+  <div class="box">
+    <p><strong>What we don't say.</strong> You will never read "the most accurate weather" in Nimbus. No model wins every day. What we do say, for every single day, is how sure we are, so you can decide what to do with the forecast.</p>
+  </div>
+
+  <h2>Why it matters</h2>
+  <p>Someone who plans a barbecue on Friday for next Saturday is making a decision on day eight. If the app shows that day with the same confidence as tomorrow, the disappointment is predictable. If the app says "confidence low, check again on Tuesday", you plan smarter. In the end, the honest app is the one you trust.</p>
+
+  <p>Want to join the test? The <a href="en.html">home page</a> explains how.</p>
+
+  <footer>Nimbus Weather · Powered by Google WeatherNext 3 · <a href="privacy.html#en">Privacy policy</a> · <a href="zekerheid.html">Lees dit in het Nederlands</a></footer>
+</div>
+</body>
+</html>

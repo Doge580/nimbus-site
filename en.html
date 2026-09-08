@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nimbus Weather – Google's AI weather model, honest about confidence</title>
+<meta name="description" content="Nimbus Weather is an Android weather app on Google WeatherNext 3. Every day shows how confident the forecast is. No ads, no account, no tracking.">
+<meta property="og:title" content="Nimbus Weather">
+<meta property="og:description" content="Weather from Google's AI model WeatherNext 3. Honest about confidence, no ads.">
+<meta property="og:image" content="https://doge580.github.io/nimbus-site/img/01.png">
+<meta property="og:url" content="https://doge580.github.io/nimbus-site/en.html">
+<link rel="icon" href="img/icon.png">
+<link rel="alternate" hreflang="nl" href="https://doge580.github.io/nimbus-site/">
+<style>
+  :root{--bg:#F4F7FC;--surface:#fff;--ink:#12203B;--muted:#56627A;--line:#D8E0EE;--accent:#3F51B5;--sky:#5B7CFF;--tint:#E9EDFB;--high:#1F8F63;--mid:#B57F00;--low:#C4463F}
+  @media (prefers-color-scheme:dark){:root{--bg:#0D1526;--surface:#15203A;--ink:#E8EEF9;--muted:#A6B2C9;--line:#2A3752;--accent:#8DA2FF;--sky:#7EC8FF;--tint:#1B2745;--high:#4CC38A;--mid:#E8B23C;--low:#E5716A}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  a{color:var(--accent)}
+  .wrap{max-width:960px;margin:0 auto;padding:28px 20px 72px}
+  nav{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:.95rem}
+  nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--ink)}
+  nav .brand img{width:32px;height:32px;border-radius:8px}
+  nav .links{display:flex;gap:18px}
+  .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-top:44px}
+  @media (max-width:760px){.hero{grid-template-columns:1fr}}
+  h1{font-size:clamp(2rem,4.6vw,3rem);line-height:1.08;margin:0 0 14px;letter-spacing:-.01em;text-wrap:balance}
+  .lede{font-size:1.15rem;max-width:34em;margin:0 0 22px}
+  .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:10px}
+  .cta:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+  .sub{font-size:.9rem;color:var(--muted);margin-top:10px}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .shots img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);background:var(--surface)}
+  .promises{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:56px}
+  @media (max-width:640px){.promises{grid-template-columns:1fr}}
+  .promise{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .promise h2{font-size:1.1rem;margin:0 0 6px}
+  .promise p{margin:0;color:var(--muted)}
+  .conf{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+  .conf::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+  .high{color:var(--high)}.mid{color:var(--mid)}.low{color:var(--low)}
+  h2.section{font-size:1.5rem;margin:56px 0 10px;text-wrap:balance}
+  .steps{background:var(--tint);border-radius:14px;padding:18px 22px;max-width:640px}
+  .steps ol{margin:8px 0 0;padding-left:22px}
+  .steps li{margin:8px 0}
+  footer{margin-top:64px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:8px 22px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="en.html"><img src="img/icon.png" alt="" width="32" height="32">Nimbus Weather</a>
+    <div class="links"><a href="confidence.html">Why confidence</a><a href="./">Nederlands</a></div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>Weather from Google's AI model, honest about how sure it is.</h1>
+      <p class="lede">Nimbus Weather shows for every day whether the forecast's confidence is <span class="conf high">high</span>, <span class="conf mid">fair</span> or <span class="conf low">low</span>. No ads, no account, no tracking. Everything on one screen, with precipitation radar.</p>
+      <a class="cta" href="https://play.google.com/apps/testing/app.nimbus.weather">Become a tester on Android</a>
+      <p class="sub">The app is in its final test phase before the Play Store. Testing is free and helps make the app better.</p>
+    </div>
+    <div class="shots">
+      <img src="img/01.png" alt="Nimbus Weather home screen with current conditions, hourly and daily forecast">
+      <img src="img/02.png" alt="Daily overview showing the confidence of each day's forecast">
+      <img src="img/03.png" alt="Precipitation radar on the map">
+    </div>
+  </section>
+
+  <section class="promises">
+    <div class="promise"><h2>Google's AI weather model</h2><p>Forecasts come from Google WeatherNext 3, delivered through the Google Maps Platform Weather API. Powered by Google WeatherNext 3.</p></div>
+    <div class="promise"><h2>Honest about confidence</h2><p>A forecast for the day after tomorrow is more certain than one for day eight. Nimbus says so, instead of sounding equally sure everywhere. <a href="confidence.html">Why that matters.</a></p></div>
+    <div class="promise"><h2>No ads, no account, no tracking</h2><p>Your location is only used to fetch the weather and stays on your phone. Read the <a href="privacy.html#en">privacy policy</a>.</p></div>
+    <div class="promise"><h2>Everything on one screen</h2><p>Now, the coming hours and ten days ahead without digging. Plus a precipitation radar for Europe and the United States.</p></div>
+  </section>
+
+  <h2 class="section">Join the test</h2>
+  <div class="steps">
+    <p>Two steps on your Android phone, using the Google account your Play Store uses:</p>
+    <ol>
+      <li>Join the test group: <a href="https://groups.google.com/g/nimbus-weather-testers">groups.google.com/g/nimbus-weather-testers</a></li>
+      <li>Tap "Become a tester": <a href="https://play.google.com/apps/testing/app.nimbus.weather">play.google.com/apps/testing/app.nimbus.weather</a> and install the app from the Play Store.</li>
+    </ol>
+    <p class="sub">Not showing up yet? That's normal, Google sometimes needs an hour. Feedback is welcome at <a href="mailto:thenewmediax@gmail.com">thenewmediax@gmail.com</a>.</p>
+  </div>
+
+  <footer>
+    <span>© 2026 Nimbus Weather</span>
+    <a href="privacy.html#en">Privacy policy</a>
+    <a href="confidence.html">Why a weather app should tell you how sure it is</a>
+    <a href="./">Nederlands</a>
+  </footer>
+</div>
+</body>
+</html>
