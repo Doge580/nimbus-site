@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perskit – Nimbus Weather</title>
+<meta name="description" content="Perskit van Nimbus Weather: korte en lange beschrijving, feiten, screenshots, logo en contact. Een Android-weerapp op Google WeatherNext 3 die bij elke dag zegt hoe zeker de verwachting is.">
+<meta property="og:title" content="Perskit – Nimbus Weather">
+<meta property="og:description" content="Nederlandse weerapp op Google's AI-model WeatherNext 3, eerlijk over zekerheid, zonder reclame.">
+<meta property="og:image" content="https://doge580.github.io/nimbus-site/img/feature.png">
+<meta property="og:url" content="https://doge580.github.io/nimbus-site/pers.html">
+<link rel="icon" href="img/icon.png">
+<link rel="alternate" hreflang="en" href="https://doge580.github.io/nimbus-site/press.html">
+<style>
+  :root{--bg:#F4F7FC;--surface:#fff;--ink:#12203B;--muted:#56627A;--line:#D8E0EE;--accent:#3F51B5;--sky:#5B7CFF;--tint:#E9EDFB;--high:#1F8F63;--mid:#B57F00;--low:#C4463F}
+  @media (prefers-color-scheme:dark){:root{--bg:#0D1526;--surface:#15203A;--ink:#E8EEF9;--muted:#A6B2C9;--line:#2A3752;--accent:#8DA2FF;--sky:#7EC8FF;--tint:#1B2745;--high:#4CC38A;--mid:#E8B23C;--low:#E5716A}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  a{color:var(--accent)}
+  .wrap{max-width:960px;margin:0 auto;padding:28px 20px 72px}
+  nav{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:.95rem;flex-wrap:wrap}
+  nav .brand{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:var(--ink)}
+  nav .brand img{width:32px;height:32px;border-radius:8px}
+  nav .links{display:flex;gap:18px;flex-wrap:wrap}
+  .hero{margin-top:44px;max-width:44em}
+  .kicker{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;margin:0 0 8px}
+  h1{font-size:clamp(2rem,4.6vw,3rem);line-height:1.08;margin:0 0 14px;letter-spacing:-.01em;text-wrap:balance}
+  .lede{font-size:1.15rem;margin:0 0 18px}
+  .avail{display:inline-block;background:var(--tint);border-radius:10px;padding:10px 16px;font-weight:600}
+  .sub{font-size:.9rem;color:var(--muted);margin-top:10px}
+  h2.section{font-size:1.5rem;margin:56px 0 12px;text-wrap:balance}
+  .text{max-width:44em}
+  .text p{margin:12px 0}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px;max-width:44em}
+  .card p{margin:8px 0}
+  .facts{display:grid;grid-template-columns:max-content 1fr;gap:8px 20px;margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+  .facts dt{font-weight:600}
+  .facts dd{margin:0;color:var(--muted)}
+  @media (max-width:560px){.facts{grid-template-columns:1fr;gap:2px}.facts dd{margin-bottom:10px}}
+  .promises{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media (max-width:760px){.promises{grid-template-columns:1fr}}
+  .promise{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .promise h3{font-size:1.1rem;margin:0 0 6px}
+  .promise p{margin:0;color:var(--muted)}
+  .conf{display:inline-flex;align-items:center;gap:6px;font-weight:600}
+  .conf::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+  .high{color:var(--high)}.mid{color:var(--mid)}.low{color:var(--low)}
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:640px}
+  .shots figure{margin:0}
+  .shots img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);background:var(--surface)}
+  .shots figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
+  .assets{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;margin-top:20px}
+  .assets figure{margin:0}
+  .assets img{border-radius:14px;border:1px solid var(--line);background:var(--surface);height:auto}
+  .assets figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
+  .soon{font-size:.8rem;font-weight:600;background:var(--tint);border-radius:6px;padding:2px 8px;margin-left:6px;white-space:nowrap}
+  ul.plain{padding-left:20px;margin:8px 0}
+  ul.plain li{margin:6px 0}
+  footer{margin-top:64px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:8px 22px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="./"><img src="img/icon.png" alt="" width="32" height="32">Nimbus Weather</a>
+    <div class="links"><a href="./">Startpagina</a><a href="zekerheid.html">Waarom zekerheid</a><a href="press.html">English</a></div>
+  </nav>
+
+  <section class="hero">
+    <p class="kicker">Perskit</p>
+    <h1>Een weerapp die bij elke dag zegt hoe zeker de verwachting is.</h1>
+    <p class="lede">Nederlandse solo-ontwikkelaar Paul van Gompel zet het AI-weermodel van Google (WeatherNext 3) in een Android-weerapp zonder reclame, die bij elke dag eerlijk zegt hoe zeker de verwachting is.</p>
+    <p class="avail">Beschikbaar in Google Play vanaf [DATUM]</p>
+    <p class="sub">Link naar de app: [PLAY-LINK]. Alle teksten en beelden op deze pagina mag je vrij gebruiken voor een artikel over Nimbus Weather.</p>
+  </section>
+
+  <h2 class="section">Korte beschrijving</h2>
+  <div class="card">
+    <p>Nimbus Weather is een Android-weerapp die de verwachting van Google's AI-weermodel WeatherNext 3 gebruikt en bij elke dag laat zien hoe zeker die verwachting is: <span class="conf high">hoog</span>, <span class="conf mid">matig</span> of <span class="conf low">laag</span>. Geen reclame, geen account, geen tracking.</p>
+  </div>
+
+  <h2 class="section">Lange beschrijving</h2>
+  <div class="text">
+    <p>De meeste weerapps tonen dag acht net zo stellig als morgen: een icoontje, een temperatuur, klaar. Maar hoe verder vooruit, hoe onzekerder de verwachting. Nimbus Weather zegt dat gewoon. Bij elke dag staat in gewone taal of de zekerheid hoog, matig of laag is, op basis van hoe ver die dag vooruit ligt. Zo zie je in één oogopslag welke dagen je kunt plannen en welke nog kunnen omslaan.</p>
+    <p>De verwachting komt van Google WeatherNext 3, een AI-weermodel van Google, geleverd via het Google Maps Platform Weather API. De app toont het actuele weer, een verwachting per uur en tien dagen vooruit, een regenradar en de regenverwachting voor de komende uren. Wie wil, zet een regenmelding aan. Er is een widget voor het startscherm en je kunt het weer van vandaag als plaatje delen, bijvoorbeeld in de familie-app.</p>
+    <p>Nimbus heeft geen reclame, geen account en geen tracking. Je locatie wordt alleen gebruikt om het weer op te halen. Zoeken naar een plaats werkt zonder internet, in een lijst van ruim 16.000 plaatsen, ook op oude of buitenlandse namen.</p>
+    <p>De app is gemaakt door Paul van Gompel, die Nimbus in zijn eentje bouwt. Voor de lancering is de app veertien dagen getest door ruim twaalf testers: vrienden, familie en andere app-makers via Reddit. Hun feedback leidde tot zeven updates. Binnenkort komt er een regenwaarschuwing per minuut voor Nederland, zoals "Over 20 minuten regen, tot 14:10".</p>
+  </div>
+
+  <h2 class="section">Feiten op een rij</h2>
+  <dl class="facts">
+    <dt>Naam</dt><dd>Nimbus Weather</dd>
+    <dt>Maker</dt><dd>Paul van Gompel, solo-ontwikkelaar uit Nederland</dd>
+    <dt>Platform</dt><dd>Android</dd>
+    <dt>Beschikbaar</dt><dd>In Google Play vanaf [DATUM] – [PLAY-LINK]</dd>
+    <dt>Prijs</dt><dd>Gratis, zonder reclame</dd>
+    <dt>Talen</dt><dd>Nederlands en Engels, Duits en Frans volgen</dd>
+    <dt>Weerdata</dt><dd>Google WeatherNext 3 via het Google Maps Platform Weather API (Powered by Google WeatherNext 3)</dd>
+    <dt>Functies</dt><dd>Actueel weer, verwachting per uur en 10 dagen, regenradar, regen komende uren, zekerheid per dag, regenmelding (optioneel), widget, deelbare weerkaart</dd>
+    <dt>Plaatsen zoeken</dt><dd>Zonder internet, ruim 16.000 plaatsen, ook oude en buitenlandse namen</dd>
+    <dt>Privacy</dt><dd>Geen reclame, geen account, geen tracking; locatie alleen om het weer op te halen (<a href="privacy.html">privacybeleid</a>)</dd>
+    <dt>Test</dt><dd>Gesloten test met 12+ testers gedurende 14 dagen; zeven updates op basis van hun feedback</dd>
+    <dt>Binnenkort</dt><dd>Regenwaarschuwing per minuut voor Nederland <span class="soon">binnenkort</span></dd>
+    <dt>Contact</dt><dd><a href="mailto:thenewmediax@gmail.com">thenewmediax@gmail.com</a></dd>
+  </dl>
+
+  <h2 class="section">Wat Nimbus anders maakt</h2>
+  <section class="promises">
+    <div class="promise"><h3>Eerlijk over zekerheid</h3><p>Bij elke dag staat <span class="conf high">hoog</span>, <span class="conf mid">matig</span> of <span class="conf low">laag</span>. Vandaag tot overmorgen is hoog, dag drie tot vijf matig, dag zes en verder laag. <a href="zekerheid.html">De uitleg.</a></p></div>
+    <div class="promise"><h3>AI-weermodel van Google</h3><p>De verwachting komt van Google WeatherNext 3, via het officiële Google Maps Platform Weather API. Nimbus maakt het model niet en doet er geen claims over die Google zelf niet doet.</p></div>
+    <div class="promise"><h3>Geen reclame, geen account</h3><p>Geen advertenties, geen inlog en geen tracking. De locatie wordt alleen gebruikt om het weer op te halen.</p></div>
+  </section>
+
+  <h2 class="section">Screenshots</h2>
+  <div class="shots">
+    <figure><a href="img/01.png"><img src="img/01.png" alt="Beginscherm van Nimbus Weather met actueel weer, uurverwachting en dagen vooruit" width="1080" height="1920" loading="lazy"></a><figcaption>Beginscherm</figcaption></figure>
+    <figure><a href="img/02.png"><img src="img/02.png" alt="Dagoverzicht met per dag de zekerheid van de verwachting" width="1080" height="1920" loading="lazy"></a><figcaption>Zekerheid per dag</figcaption></figure>
+    <figure><a href="img/03.png"><img src="img/03.png" alt="Neerslagradar op de kaart" width="1080" height="1920" loading="lazy"></a><figcaption>Regenradar</figcaption></figure>
+  </div>
+  <p class="sub">Klik op een afbeelding voor het volledige formaat (1080 × 1920). Engelse screenshots staan op de <a href="press.html">Engelse perspagina</a>.</p>
+
+  <h2 class="section">Logo en beeld</h2>
+  <div class="assets">
+    <figure><a href="img/icon.png" download="nimbus-weather-icoon.png"><img src="img/icon.png" alt="App-icoon van Nimbus Weather" width="128" height="128"></a><figcaption>App-icoon, 512 × 512 (PNG)</figcaption></figure>
+    <figure><a href="img/feature.png" download="nimbus-weather-banner.png"><img src="img/feature.png" alt="Banner van Nimbus Weather" width="400" height="195"></a><figcaption>Banner, 1024 × 500 (PNG)</figcaption></figure>
+  </div>
+  <p class="sub">Vermeld bij de weerdata graag: "Powered by Google WeatherNext 3".</p>
+
+  <h2 class="section">Contact</h2>
+  <div class="card">
+    <p>Paul van Gompel – <a href="mailto:thenewmediax@gmail.com">thenewmediax@gmail.com</a></p>
+    <p>Vragen, een interview of vroege toegang tot de app? Stuur een mail, ik reageer binnen een dag.</p>
+  </div>
+
+  <footer>
+    <span>© 2026 Nimbus Weather</span>
+    <a href="./">Startpagina</a>
+    <a href="zekerheid.html">Waarom een weerapp moet zeggen hoe zeker ze is</a>
+    <a href="privacy.html">Privacybeleid</a>
+    <a href="press.html">English</a>
+  </footer>
+</div>
+</body>
+</html>
