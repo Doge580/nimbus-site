@@ -13,88 +13,88 @@
 </head>
 <body>
 <h1>Privacybeleid – Nimbus Weather</h1>
-<p class="meta">Laatst bijgewerkt: 23 september 2026 · <a href="#en">English version below</a></p>
+<p class="meta">Laatst bijgewerkt: 21 oktober 2026 · <a href="#en">English version below</a></p>
 
-<p>Nimbus Weather is een weerapp voor Android. Dit beleid legt uit welke gegevens de app gebruikt en waarom. Kort gezegd: de app heeft geen account, verzamelt geen persoonsgegevens voor eigen gebruik, toont geen advertenties en bevat geen trackers.</p>
+<p>Nimbus Weather is een weerapp voor Android en iPhone. Waar de twee verschillen, staat dat erbij. Dit beleid legt uit welke gegevens de app gebruikt en waarom. Kort gezegd: de app heeft geen account, verzamelt geen persoonsgegevens voor eigen gebruik, toont geen advertenties en bevat geen trackers.</p>
 
 <h2>Locatie</h2>
-<p>Als je op "Gebruik mijn locatie" tikt, vraagt de app eenmalig toestemming voor je locatie. Je positie wordt alleen gebruikt om het weer voor jouw omgeving op te halen en om een plaatsnaam te bepalen. De app deelt je locatie daarvoor met de weerdienst van Google en, in Nederland en België, afgerond met onze regenserver (zie hieronder). Wij bewaren je locatie niet in een eigen database; de laatst gekozen plaats wordt alleen op je toestel bewaard zodat de app snel kan starten. Je kunt de app ook zonder locatie gebruiken door een stad te zoeken.</p>
+<p>Als je bij de eerste start op "Aan de slag" of later op "Gebruik mijn locatie" tikt, vraagt de app toestemming voor je locatie. Je positie wordt alleen gebruikt om het weer voor jouw omgeving op te halen en om een plaatsnaam te bepalen. De app deelt je locatie daarvoor met de weerdienst van Google, met de plaatsnamendienst van je toestel (op Android die van Google, op de iPhone die van Apple) en, in en rond Nederland en België, afgerond met onze regenserver (zie hieronder). Kan de plaatsnamendienst geen naam geven, dan neemt de app de dichtstbijzijnde stad uit een lijst in de app zelf. Wij bewaren je locatie niet in een eigen database; de laatst gekozen plaats wordt alleen op je toestel bewaard zodat de app snel kan starten. Je kunt de app ook zonder locatie gebruiken door een stad te zoeken.</p>
 
 <h2>Weerdata van derden</h2>
-<p>Weerinformatie en radartegels komen van het <strong>Google Maps Platform Weather API</strong> (powered by Google WeatherNext 3). Daarbij ontvangt Google de coördinaten waarvoor je het weer opvraagt en technische gegevens zoals je IP-adres. De achtergrondkaart van de radar komt van <strong>OpenStreetMap</strong>. Zie het <a href="https://policies.google.com/privacy">privacybeleid van Google</a> en het <a href="https://osmfoundation.org/wiki/Privacy_Policy">privacybeleid van OpenStreetMap</a>.</p>
+<p>Weerinformatie, weericoontjes en radartegels komen van het <strong>Google Maps Platform Weather API</strong> (powered by Google WeatherNext 3). Daarbij ontvangt Google de coördinaten waarvoor je het weer opvraagt (niet afgerond) en technische gegevens zoals je IP-adres. De achtergrondkaart van de radar komt van <strong>TomTom</strong>. TomTom ontvangt alleen welke kaartstukken de app laadt, dus het gebied dat je op de radar bekijkt, en technische gegevens zoals je IP-adres. Zie het <a href="https://policies.google.com/privacy">privacybeleid van Google</a> en het <a href="https://www.tomtom.com/nl-nl/privacy/">privacybeleid van TomTom</a>.</p>
 
 <h2>Regen per minuut (Nederland en België)</h2>
-<p>Voor een plek in Nederland of België toont de app de verwachte regen voor de komende twee uur, per 5 minuten. Die komt van de neerslagradar van het <strong>KNMI</strong> (open data, CC BY 4.0). De app vraagt die op bij onze eigen server (Google Cloud Run, in de EU), en stuurt daarbij alleen de <strong>op ongeveer 1 kilometer afgeronde</strong> coördinaten mee, geen exact adres. De server bewaart die niet; Google Cloud houdt wel technische verzoeklogboeken bij (met die afgeronde plek en je IP-adres), die na 30 dagen automatisch worden verwijderd. Wij gebruiken die logboeken alleen om storingen op te sporen.</p>
+<p>Voor een plek in Nederland, het grootste deel van België of net over de grens in Duitsland en Frankrijk toont de app de verwachte regen voor de komende twee uur, per 5 minuten. Die komt van de neerslagradar van het <strong>KNMI</strong> (open data, CC BY 4.0). De app vraagt die op bij onze eigen server (Google Cloud Run, in de EU), en stuurt daarbij alleen de <strong>op ongeveer 1 kilometer afgeronde</strong> coördinaten mee, geen exact adres. De server bewaart die niet; Google Cloud houdt wel technische verzoeklogboeken bij (met die afgeronde plek en je IP-adres), die na 30 dagen automatisch worden verwijderd. Wij gebruiken die logboeken alleen om storingen op te sporen.</p>
 
-<h2>Regenmelding, widget en verversen op de achtergrond</h2>
-<p>De regenmelding staat standaard uit. Zet je hem aan, of plaats je de Nimbus-widget op je startscherm, dan haalt de app ongeveer elk half uur tot elk uur de uurverwachting op voor je <strong>laatst gekozen plaats</strong>, ook als de app dicht is. Daarvoor gaan alleen de coördinaten van die plaats naar de weerdienst van Google en, in Nederland en België, afgerond naar onze regenserver, net als bij normaal gebruik. De app vraagt geen toegang tot je locatie op de achtergrond. Meldingen worden op je toestel zelf gemaakt; wij ontvangen niets. Zet de regenmelding uit en haal de widget weg, dan stopt dit verversen.</p>
+<h2>Regenmelding, widget en verversen op de achtergrond (alleen Android)</h2>
+<p>Deze drie zijn er alleen in de Android-app; de iPhone-app haalt niets op als hij dicht is. De regenmelding staat standaard uit. Zet je hem aan, of plaats je de Nimbus-widget op je startscherm, dan haalt de app ongeveer elk half uur tot elk uur de uurverwachting op voor je <strong>laatst gekozen plaats</strong>, ook als de app dicht is. Daarvoor gaan alleen de coördinaten van die plaats naar de weerdienst van Google en, in en rond Nederland en België, afgerond naar onze regenserver, net als bij normaal gebruik. De app vraagt geen toegang tot je locatie op de achtergrond. Meldingen worden op je toestel zelf gemaakt; wij ontvangen niets. Zet de regenmelding uit en haal de widget weg, dan stopt dit verversen.</p>
 
 <h2>Plaatsen zoeken</h2>
-<p>Zoeken op plaatsnaam gebeurt eerst in een lijst van steden die in de app zelf zit (bron: GeoNames.org, CC BY 4.0), zonder dat je zoekopdracht het toestel verlaat. Vindt die lijst te weinig, dan gebruikt de app de plaatsenzoeker van Android op je toestel.</p>
+<p>Zoeken op plaatsnaam gebeurt eerst in een lijst van steden die in de app zelf zit (bron: GeoNames.org, CC BY 4.0). Vindt die lijst genoeg plaatsen, dan verlaat je zoekopdracht het toestel niet. Vindt die lijst te weinig, dan stuurt de app je zoekopdracht, vanaf drie letters en ook tijdens het typen, naar de plaatsenzoeker van je toestel, die via internet zoekt: op Android die van Google, op de iPhone die van Apple. Die ontvangt je zoekopdracht en technische gegevens zoals je IP-adres. Zie het <a href="https://www.apple.com/nl/legal/privacy/">privacybeleid van Apple</a>.</p>
 
 <h2>Beoordelen en delen</h2>
-<p>Na een paar keer gebruik kan de app via Google Play vragen om een beoordeling; dat venster en wat je daarin invult worden door Google afgehandeld. Kies je zelf voor Delen, dan maakt de app op je toestel een plaatje van het weer van vandaag en geeft dat door aan de app die jij kiest.</p>
+<p>Op Android kan de app na een paar keer gebruik via Google Play vragen om een beoordeling; dat venster en wat je daarin invult worden door Google afgehandeld. De iPhone-app vraagt niet om een beoordeling. Kies je zelf voor Delen, dan maakt de app op je toestel een plaatje van het weer van vandaag en geeft dat door aan de app die jij kiest.</p>
 
 <h2>Instellingen op je toestel</h2>
-<p>Je voorkeuren (taal, °C/°F, thema, laatst gekozen plaats) worden uitsluitend lokaal op je toestel opgeslagen. Ze worden niet naar ons verzonden.</p>
+<p>Je voorkeuren (taal, °C/°F, thema, laatst gekozen plaats) worden uitsluitend lokaal op je toestel opgeslagen. Ze worden niet naar ons verzonden. Ook kaartstukken van de radar die al geladen zijn, bewaart de app alleen op je toestel.</p>
 
 <h2>Wat we niet doen</h2>
 <ul>
   <li>Geen account of registratie</li>
   <li>Geen advertenties en geen advertentie-identifiers</li>
   <li>Geen analytics of trackers van derden</li>
-  <li>Geen verkoop of doorgifte van gegevens aan derden, anders dan de hierboven genoemde weer- en kaartdiensten</li>
+  <li>Geen verkoop of doorgifte van gegevens aan derden, anders dan de hierboven genoemde weer-, kaart- en plaatsnamendiensten</li>
 </ul>
 
 <h2>Kinderen</h2>
 <p>De app is geschikt voor alle leeftijden en verzamelt geen gegevens van kinderen.</p>
 
 <h2>Gegevens verwijderen</h2>
-<p>Omdat wij geen gegevens over jou bewaren, volstaat het om de app te verwijderen; daarmee verdwijnen ook alle lokaal opgeslagen voorkeuren.</p>
+<p>Wij houden geen gegevens over jou bij, behalve de technische verzoeklogboeken van onze regenserver, die na 30 dagen vanzelf worden verwijderd (zie boven). Verwijder je de app, dan verdwijnen ook alle voorkeuren op je toestel.</p>
 
 <h2>Wijzigingen en contact</h2>
 <p>Bij wijzigingen werken we deze pagina bij. Vragen? Mail naar <a href="mailto:thenewmediax@gmail.com">thenewmediax@gmail.com</a>.</p>
 
 <hr>
 <h1 id="en">Privacy Policy – Nimbus Weather</h1>
-<p class="meta">Last updated: 23 September 2026</p>
+<p class="meta">Last updated: 21 October 2026</p>
 
-<p>Nimbus Weather is a weather app for Android. This policy explains what data the app uses and why. In short: there is no account, we do not collect personal data for our own use, there are no ads and no trackers.</p>
+<p>Nimbus Weather is a weather app for Android and iPhone. Where the two differ, this policy says so. This policy explains what data the app uses and why. In short: there is no account, we do not collect personal data for our own use, there are no ads and no trackers.</p>
 
 <h2>Location</h2>
-<p>When you tap "Use my location", the app asks for location permission once. Your position is used only to fetch the weather for your area and to determine a place name. For that purpose the app shares your location with Google's weather service and, in the Netherlands and Belgium, rounded with our rain server (see below). We do not keep your location in a database of our own; the last chosen place is kept on your device only so the app can start quickly. You can also use the app without location by searching for a city.</p>
+<p>When you tap "Get started" on first launch or "Use my location" later, the app asks for location permission. Your position is used only to fetch the weather for your area and to determine a place name. For that purpose the app shares your location with Google's weather service, with your device's place name service (Google's on Android, Apple's on iPhone) and, in and around the Netherlands and Belgium, rounded with our rain server (see below). If the place name service cannot give a name, the app takes the nearest city from a list built into the app. We do not keep your location in a database of our own; the last chosen place is kept on your device only so the app can start quickly. You can also use the app without location by searching for a city.</p>
 
 <h2>Third-party weather data</h2>
-<p>Weather information and radar tiles come from the <strong>Google Maps Platform Weather API</strong> (powered by Google WeatherNext 3). Google receives the coordinates you request weather for and technical data such as your IP address. The radar base map comes from <strong>OpenStreetMap</strong>. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Privacy Policy</a>.</p>
+<p>Weather information, weather icons and radar tiles come from the <strong>Google Maps Platform Weather API</strong> (powered by Google WeatherNext 3). Google receives the coordinates you request weather for (not rounded) and technical data such as your IP address. The radar base map comes from <strong>TomTom</strong>. TomTom only receives which map tiles the app loads, that is the area you look at on the radar, and technical data such as your IP address. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://www.tomtom.com/privacy/">TomTom Privacy Policy</a>.</p>
 
 <h2>Rain by the minute (Netherlands and Belgium)</h2>
-<p>For a place in the Netherlands or Belgium the app shows the rain expected in the next two hours, per 5 minutes. It comes from the precipitation radar of <strong>KNMI</strong>, the Dutch meteorological institute (open data, CC BY 4.0). The app asks our own server for it (Google Cloud Run, in the EU) and only sends the coordinates <strong>rounded to about 1 kilometre</strong>, never an exact address. The server does not store them; Google Cloud does keep technical request logs (with that rounded place and your IP address), which are deleted automatically after 30 days. We use those logs only to investigate outages.</p>
+<p>For a place in the Netherlands, most of Belgium or just across the border in Germany and France the app shows the rain expected in the next two hours, per 5 minutes. It comes from the precipitation radar of <strong>KNMI</strong>, the Dutch meteorological institute (open data, CC BY 4.0). The app asks our own server for it (Google Cloud Run, in the EU) and only sends the coordinates <strong>rounded to about 1 kilometre</strong>, never an exact address. The server does not store them; Google Cloud does keep technical request logs (with that rounded place and your IP address), which are deleted automatically after 30 days. We use those logs only to investigate outages.</p>
 
-<h2>Rain alerts, widget and background refresh</h2>
-<p>Rain alerts are off by default. If you turn them on, or place the Nimbus widget on your home screen, the app fetches the hourly forecast for your <strong>last chosen place</strong> about every thirty to sixty minutes, also when the app is closed. Only that place's coordinates are sent to Google's weather service and, in the Netherlands and Belgium, rounded to our rain server, just like during normal use. The app does not ask for background location access. Notifications are created on your device; we receive nothing. Turn rain alerts off and remove the widget and the background refresh stops.</p>
+<h2>Rain alerts, widget and background refresh (Android only)</h2>
+<p>These three exist only in the Android app; the iPhone app fetches nothing while it is closed. Rain alerts are off by default. If you turn them on, or place the Nimbus widget on your home screen, the app fetches the hourly forecast for your <strong>last chosen place</strong> about every thirty to sixty minutes, also when the app is closed. Only that place's coordinates are sent to Google's weather service and, in and around the Netherlands and Belgium, rounded to our rain server, just like during normal use. The app does not ask for background location access. Notifications are created on your device; we receive nothing. Turn rain alerts off and remove the widget and the background refresh stops.</p>
 
 <h2>Searching for places</h2>
-<p>Place search first uses a list of cities built into the app (source: GeoNames.org, CC BY 4.0), so your query does not leave the device. If that list finds too little, the app uses Android's place search on your device.</p>
+<p>Place search first uses a list of cities built into the app (source: GeoNames.org, CC BY 4.0). If that list finds enough places, your query does not leave the device. If it finds too few, the app sends your query, from three letters on and also while you type, to your device's place search, which searches over the internet: Google's on Android, Apple's on iPhone. It receives your query and technical data such as your IP address. See the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
 
 <h2>Ratings and sharing</h2>
-<p>After a few uses the app may ask for a rating through Google Play; that dialog and anything you enter in it are handled by Google. If you choose Share, the app creates an image of today's weather on your device and passes it to the app you pick.</p>
+<p>On Android, after a few uses the app may ask for a rating through Google Play; that dialog and anything you enter in it are handled by Google. The iPhone app does not ask for a rating. If you choose Share, the app creates an image of today's weather on your device and passes it to the app you pick.</p>
 
 <h2>Settings on your device</h2>
-<p>Your preferences (language, °C/°F, theme, last chosen place) are stored locally on your device only and are never sent to us.</p>
+<p>Your preferences (language, °C/°F, theme, last chosen place) are stored locally on your device only and are never sent to us. Map tiles of the radar that were already loaded are also kept on your device only.</p>
 
 <h2>What we do not do</h2>
 <ul>
   <li>No account or sign-up</li>
   <li>No ads and no advertising identifiers</li>
   <li>No third-party analytics or trackers</li>
-  <li>No selling or sharing of data with third parties other than the weather and map services named above</li>
+  <li>No selling or sharing of data with third parties other than the weather, map and place name services named above</li>
 </ul>
 
 <h2>Children</h2>
 <p>The app is suitable for all ages and does not collect data from children.</p>
 
 <h2>Deleting your data</h2>
-<p>Since we keep no data about you, uninstalling the app removes all locally stored preferences.</p>
+<p>We keep no data about you, apart from our rain server's technical request logs, which are deleted automatically after 30 days (see above). Uninstalling the app removes all preferences stored on your device.</p>
 
 <h2>Changes and contact</h2>
 <p>We will update this page when anything changes. Questions? Email <a href="mailto:thenewmediax@gmail.com">thenewmediax@gmail.com</a>.</p>
